@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog PUCPR - Criar Blog</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <img src="logo-pucpr.png" alt="Logo PUCPR" class="logo">
+        <h1>Blog - PUCPR</h1>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="form.html">Criar Blog</a></li>
+          <li><a href="about.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  
+  <main>
+    <form id="blogForm" action="formAction.html" method="GET">
+      <h2>Criar um Blog</h2>
+      <label for="title">Título:</label>
+      <input type="text" id="title" name="title" placeholder="Digite um título" required>
+
+      <label for="description">Descrição:</label>
+      <textarea id="description" name="description" placeholder="Digite um descrição" required></textarea>
+
+      <label for="category">Categoria:</label>
+      <select id="category" name="category" required>
+        <option value="" disabled selected>Selecione uma categoria</option>
+        <option value="technology">Tecnologia</option>
+        <option value="lifestyle">Lifestyle</option>
+        <option value="education">Educação</option>
+        <option value="entertainment">Entretenimento</option>
+      </select>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <script src="js/form.js"></script>
+  <footer>
+    <p>&copy; 2024 Blog PUCPR. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
