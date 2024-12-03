@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -58,7 +62,8 @@ form label {
   margin-bottom: 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -73,11 +78,10 @@ form button {
 }
 
 .logo {
-  width: 120px; 
+  width: 120px;
   height: 120px;
-  object-fit: contain; 
+  object-fit: contain;
 }
-
 
 footer {
   position: absolute;
