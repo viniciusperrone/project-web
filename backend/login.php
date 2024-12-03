@@ -13,18 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
-        header('Location: index.html');
+        header('Location: ../frontend/index.html');
     } else {
-        echo "Invalid credentials!";
+        echo "Credenciais inválidas!";
     }
 }
 ?>
-
-<!-- Formulário de login -->
-<form action="login.php" method="POST">
-    <label for="username">Username:</label>
-    <input type="text" name="username" required>
-    <label for="password">Password:</label>
-    <input type="password" name="password" required>
-    <button type="submit">Login</button>
-</form>

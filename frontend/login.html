@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Blog PUCPR</title>
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+      <h1 class="text-xl">Blog - PUCPR</h1>
+    </header>
+
+    <main class="p-4">
+      <h2 class="text-2xl mb-4">Login</h2>
+      <form action="../backend/login.php" method="POST">
+        <div class="mb-4">
+          <label for="username" class="block">Username:</label>
+          <input
+            type="text"
+            name="username"
+            required
+            class="border p-2 w-full"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block">Password:</label>
+          <input
+            type="password"
+            name="password"
+            required
+            class="border p-2 w-full"
+          />
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2">
+          Login
+        </button>
+      </form>
+      <p class="mt-4">
+        Não tem uma conta?
+        <a href="register.html" class="text-blue-600">Cadastre-se</a>
+      </p>
+    </main>
+  </body>
+</html>
